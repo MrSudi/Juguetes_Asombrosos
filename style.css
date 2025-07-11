@@ -1,0 +1,124 @@
+body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f0fbff;
+      text-align: center;
+      color: #555;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo {
+      max-width: 250px;
+    }
+    .banner {
+      width: 100%;
+      max-width: 1000px;
+      margin: 20px auto;
+      display: block;
+    }
+    .map{
+      width: 75%;
+      max-width: 500px;
+      margin: 20px auto;
+      display: block;
+    }
+    .info {
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+    .contacto {
+      background-color: #eaf6ff;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+    .contacto h2 {
+      color: 59, 120, 231;
+      margin-bottom: 10px;
+    }
+    .puntos-colores {
+      margin: 20px 0;
+    }
+    .punto {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      border-radius: 50%;
+    }
+    .verde { background-color: 139, 195, 74; }
+    .rosa { background-color: 240, 98, 146; }
+    .azul { background-color: 66, 164, 245; }
+    .amarillo { background-color: 253, 216, 53; }
+   
+    .whapp{
+      color: #25D366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .linky{
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-decoration: none;
+      color: #555;
+    }
+
+nav {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-buttons a {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #3b78e7; /* texto azul */
+  background-color: white;
+  margin: 0 10px;
+  z-index: 1;
+}
+
+.nav-buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: rgb(240, 98, 146); /* texto rosa en hover */
+}
+
+.nav-buttons a:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-buttons a::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: #f0fbff;
+}
+
+.nav-buttons a:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
